@@ -17,16 +17,16 @@
     "health"
   ],
   "author": {
-    "name": "SmartSkinAnalysis Team",
-    "email": "yuxiaodong@beaucare.org"
+    "name": "sooogooo",
+    "email": "sooogooo@gmail.com"
   },
-  "homepage": "https://github.com/your-username/SmartSkinAnalysis",
+  "homepage": "https://github.com/sooogooo/webapp-smart-skin-analysis",
   "repository": {
     "type": "git",
-    "url": "https://github.com/your-username/SmartSkinAnalysis.git"
+    "url": "https://github.com/sooogooo/webapp-smart-skin-analysis.git"
   },
   "bugs": {
-    "url": "https://github.com/your-username/SmartSkinAnalysis/issues"
+    "url": "https://github.com/sooogooo/webapp-smart-skin-analysis/issues"
   },
   "license": "MIT",
   "scripts": {
