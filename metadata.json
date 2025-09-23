@@ -1,0 +1,8 @@
+{
+  "name": "SmartSkinAnalysis | AI 智能皮肤诊断助手",
+  "description": "一款智能皮肤诊断应用，利用 AI 分析用户提供的信息和照片，提供个性化的皮肤评估和治疗方案。它支持各种皮肤问题，提供 AI 问答功能，并允许用户保存和查看他们的诊断历史。",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

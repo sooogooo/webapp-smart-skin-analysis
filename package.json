@@ -1,0 +1,54 @@
+{
+  "name": "smartskinanalysis",
+  "version": "1.0.0",
+  "description": "AI-powered intelligent skin diagnosis assistant using Google Gemini AI",
+  "private": true,
+  "type": "module",
+  "keywords": [
+    "ai",
+    "skin-analysis",
+    "skincare",
+    "diagnosis",
+    "beauty",
+    "gemini-ai",
+    "react",
+    "typescript",
+    "dermatology",
+    "health"
+  ],
+  "author": {
+    "name": "SmartSkinAnalysis Team",
+    "email": "yuxiaodong@beaucare.org"
+  },
+  "homepage": "https://github.com/your-username/SmartSkinAnalysis",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/SmartSkinAnalysis.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/SmartSkinAnalysis/issues"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "tsc --noEmit",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react-dom": "^19.1.1",
+    "@google/genai": "^1.20.0",
+    "react": "^19.1.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "~5.8.2",
+    "vite": "^6.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}

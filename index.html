@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI 智能皮肤诊断助手</title>
+    <link rel="icon" type="image/png" href="https://docs.bccsw.cn/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root, .theme-blue {
+        --color-brand-50: 239 246 255; --color-brand-100: 219 234 254; --color-brand-200: 191 219 254;
+        --color-brand-300: 147 197 253; --color-brand-400: 96 165 250; --color-brand-500: 59 130 246;
+        --color-brand-600: 37 99 235; --color-brand-700: 29 78 216; --color-brand-800: 30 64 175;
+        --color-brand-900: 30 58 138; --color-brand-950: 23 37 84;
+      }
+      .theme-rose {
+        --color-brand-50: 255 241 242; --color-brand-100: 255 228 230; --color-brand-200: 254 205 211;
+        --color-brand-300: 253 164 175; --color-brand-400: 251 113 133; --color-brand-500: 244 63 94;
+        --color-brand-600: 225 29 72; --color-brand-700: 190 18 60; --color-brand-800: 159 18 57;
+        --color-brand-900: 136 19 55; --color-brand-950: 76 5 25;
+      }
+      .theme-lavender {
+        --color-brand-50: 245 243 255; --color-brand-100: 237 233 254; --color-brand-200: 221 214 254;
+        --color-brand-300: 196 181 253; --color-brand-400: 167 139 250; --color-brand-500: 139 92 246;
+        --color-brand-600: 124 58 237; --color-brand-700: 109 40 217; --color-brand-800: 91 33 182;
+        --color-brand-900: 76 29 149; --color-brand-950: 46 16 101;
+      }
+      .theme-mint {
+        --color-brand-50: 240 253 250; --color-brand-100: 204 251 241; --color-brand-200: 167 243 208;
+        --color-brand-300: 110 231 183; --color-brand-400: 52 211 153; --color-brand-500: 16 185 129;
+        --color-brand-600: 5 150 105; --color-brand-700: 4 120 87; --color-brand-800: 6 95 70;
+        --color-brand-900: 6 78 59; --color-brand-950: 2 44 34;
+      }
+    </style>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                '50': 'rgb(var(--color-brand-50) / <alpha-value>)',
+                '100': 'rgb(var(--color-brand-100) / <alpha-value>)',
+                '200': 'rgb(var(--color-brand-200) / <alpha-value>)',
+                '300': 'rgb(var(--color-brand-300) / <alpha-value>)',
+                '400': 'rgb(var(--color-brand-400) / <alpha-value>)',
+                '500': 'rgb(var(--color-brand-500) / <alpha-value>)',
+                '600': 'rgb(var(--color-brand-600) / <alpha-value>)',
+                '700': 'rgb(var(--color-brand-700) / <alpha-value>)',
+                '800': 'rgb(var(--color-brand-800) / <alpha-value>)',
+                '900': 'rgb(var(--color-brand-900) / <alpha-value>)',
+                '950': 'rgb(var(--color-brand-950) / <alpha-value>)',
+              },
+            },
+            keyframes: {
+              fadeInDown: {
+                '0%': { opacity: '0', transform: 'translateY(-20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeOutUp: {
+                '0%': { opacity: '1', transform: 'translateY(0)' },
+                '100%': { opacity: '0', transform: 'translateY(-20px)' },
+              }
+            },
+            animation: {
+              'fade-in-down': 'fadeInDown 0.5s ease-out forwards',
+              'fade-out-up': 'fadeOutUp 0.5s ease-out forwards',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.20.0",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-100 dark:bg-gray-900 font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
